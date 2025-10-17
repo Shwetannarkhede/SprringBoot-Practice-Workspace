@@ -38,7 +38,7 @@ public class StudentController {
 		String msg = service.deleteData(studId);
 		return msg;
 	}
-	@GetMapping("/get/{studId}")
+	@GetMapping("/getsingledata/{studId}")
 	public Student getSingleData(@PathVariable int studId) {
 		Student s = service.getSingleData(studId);
 		return s;
